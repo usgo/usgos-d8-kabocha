@@ -1,0 +1,4 @@
+/* drupal-only styles go here */
+th { /* override drupal's style */
+    border-bottom: 2px solid black !important;
+}

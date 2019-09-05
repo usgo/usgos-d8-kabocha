@@ -1,0 +1,201 @@
+$view = new view;
+$view->name = 'problem_of_the_week_ready_queue';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Problem of the Week Ready Queue';
+$view->core = 7;
+$view->api_version = '3.0-alpha1';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Problem of the Week Ready Queue';
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  3 => '3',
+    4 => '4',
+    );
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['query']['options']['query_comment'] = FALSE;
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '20';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '20, 40, 60';
+$handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['row_class'] = 'potwproblem';
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['hide_empty'] = 0;
+$handler->display->display_options['row_options']['default_field_elements'] = 0;
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['title']['alter']['external'] = 0;
+$handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+$handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['title']['alter']['html'] = 0;
+$handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+$handler->display->display_options['fields']['title']['hide_empty'] = 0;
+$handler->display->display_options['fields']['title']['empty_zero'] = 0;
+$handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
+$handler->display->display_options['fields']['title']['link_to_node'] = 0;
+/* Field: Content: Path */
+$handler->display->display_options['fields']['path']['id'] = 'path';
+$handler->display->display_options['fields']['path']['table'] = 'node';
+$handler->display->display_options['fields']['path']['field'] = 'path';
+$handler->display->display_options['fields']['path']['label'] = '';
+$handler->display->display_options['fields']['path']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['path']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['path']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['path']['alter']['external'] = 0;
+$handler->display->display_options['fields']['path']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['path']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['path']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['path']['alter']['word_boundary'] = 1;
+$handler->display->display_options['fields']['path']['alter']['ellipsis'] = 1;
+$handler->display->display_options['fields']['path']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['path']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['path']['alter']['html'] = 0;
+$handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['path']['element_default_classes'] = 1;
+$handler->display->display_options['fields']['path']['hide_empty'] = 0;
+$handler->display->display_options['fields']['path']['empty_zero'] = 0;
+$handler->display->display_options['fields']['path']['hide_alter_empty'] = 0;
+$handler->display->display_options['fields']['path']['absolute'] = 0;
+/* Field: Content: Preview Image */
+$handler->display->display_options['fields']['field_sgf_preview']['id'] = 'field_sgf_preview';
+$handler->display->display_options['fields']['field_sgf_preview']['table'] = 'field_data_field_sgf_preview';
+$handler->display->display_options['fields']['field_sgf_preview']['field'] = 'field_sgf_preview';
+$handler->display->display_options['fields']['field_sgf_preview']['label'] = '';
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['external'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['word_boundary'] = 1;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['ellipsis'] = 1;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['alter']['html'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_sgf_preview']['element_default_classes'] = 1;
+$handler->display->display_options['fields']['field_sgf_preview']['hide_empty'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['empty_zero'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['hide_alter_empty'] = 0;
+$handler->display->display_options['fields']['field_sgf_preview']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['field_sgf_preview']['field_api_classes'] = 0;
+/* Field: Content: SGF */
+$handler->display->display_options['fields']['field_sgf']['id'] = 'field_sgf';
+$handler->display->display_options['fields']['field_sgf']['table'] = 'field_data_field_sgf';
+$handler->display->display_options['fields']['field_sgf']['field'] = 'field_sgf';
+$handler->display->display_options['fields']['field_sgf']['label'] = '';
+$handler->display->display_options['fields']['field_sgf']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['external'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['word_boundary'] = 1;
+$handler->display->display_options['fields']['field_sgf']['alter']['ellipsis'] = 1;
+$handler->display->display_options['fields']['field_sgf']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['field_sgf']['alter']['html'] = 0;
+$handler->display->display_options['fields']['field_sgf']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_sgf']['element_default_classes'] = 1;
+$handler->display->display_options['fields']['field_sgf']['hide_empty'] = 0;
+$handler->display->display_options['fields']['field_sgf']['empty_zero'] = 0;
+$handler->display->display_options['fields']['field_sgf']['hide_alter_empty'] = 0;
+$handler->display->display_options['fields']['field_sgf']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['field_sgf']['field_api_classes'] = 0;
+/* Field: Content: To Play */
+$handler->display->display_options['fields']['field_to_play']['id'] = 'field_to_play';
+$handler->display->display_options['fields']['field_to_play']['table'] = 'field_data_field_to_play';
+$handler->display->display_options['fields']['field_to_play']['field'] = 'field_to_play';
+$handler->display->display_options['fields']['field_to_play']['label'] = '';
+$handler->display->display_options['fields']['field_to_play']['alter']['alter_text'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['make_link'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['absolute'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['external'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['replace_spaces'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['trim_whitespace'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['nl2br'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['word_boundary'] = 1;
+$handler->display->display_options['fields']['field_to_play']['alter']['ellipsis'] = 1;
+$handler->display->display_options['fields']['field_to_play']['alter']['strip_tags'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['trim'] = 0;
+$handler->display->display_options['fields']['field_to_play']['alter']['html'] = 0;
+$handler->display->display_options['fields']['field_to_play']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_to_play']['element_default_classes'] = 0;
+$handler->display->display_options['fields']['field_to_play']['hide_empty'] = 0;
+$handler->display->display_options['fields']['field_to_play']['empty_zero'] = 0;
+$handler->display->display_options['fields']['field_to_play']['hide_alter_empty'] = 0;
+$handler->display->display_options['fields']['field_to_play']['field_api_classes'] = 0;
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+/* Sort criterion: Content: Title */
+$handler->display->display_options['sorts']['title']['id'] = 'title';
+$handler->display->display_options['sorts']['title']['table'] = 'node';
+$handler->display->display_options['sorts']['title']['field'] = 'title';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = '0';
+$handler->display->display_options['filters']['status']['group'] = 0;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'problem' => 'problem',
+  );
+/* Filter criterion: Content: Ready For Publishing (field_ready) */
+$handler->display->display_options['filters']['field_ready_value']['id'] = 'field_ready_value';
+$handler->display->display_options['filters']['field_ready_value']['table'] = 'field_data_field_ready';
+$handler->display->display_options['filters']['field_ready_value']['field'] = 'field_ready_value';
+$handler->display->display_options['filters']['field_ready_value']['value'] = array(
+  1 => '1',
+  );
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'problem-of-the-week-ready-queue';
+$handler->display->display_options['menu']['type'] = 'normal';
+$handler->display->display_options['menu']['title'] = 'Go Problem  Ready Queue';
+$handler->display->display_options['menu']['weight'] = '49';
+$handler->display->display_options['menu']['name'] = 'main-menu';
+
+/* Display: Feed */
+$handler = $view->new_display('feed', 'Feed', 'feed');
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'rss';
+$handler->display->display_options['row_plugin'] = 'node_rss';
+$handler->display->display_options['row_options']['item_length'] = 'title';
+$handler->display->display_options['path'] = 'problem-of-the-week-ready-queue.xml';
+$handler->display->display_options['displays'] = array(
+  'default' => 'default',
+    'page' => 'page',
+    );
+
