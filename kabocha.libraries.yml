@@ -4,6 +4,18 @@ global-styles:
     theme:
       css/main.css: {}
       css/two-col.css: {}
+right-only:
+  version: 1.x
+  css:
+    theme:
+      css/right-only.css: {}
+ie-fixes:
+  version: 1.x
+  css:
+    theme:
+      css/ie6-fixes.css: {}
+      css/ie7-fixes.css: {}
+      css/ie-fixes.css: {}
 drupal-only:
   version: 1.x
   css:

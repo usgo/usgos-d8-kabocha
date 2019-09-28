@@ -1,0 +1,4 @@
+7,37 * * * * /usr/bin/curl http://www.usgo.emptypath.com/theme/includes/newsbar.generate.php -o /var/www/usgo.org/theme/includes/extracol.cached.html
+9,39 * * * * /usr/bin/curl http://www.usgo.emptypath.com/theme/includes/drupal.frontpage.generate.php -o /var/www/usgo.org/theme/includes/drupal.frontpage.cached.html
+12,42 * * * * /usr/bin/curl http://www.usgo.emptypath.com/theme/includes/drupal.wphead.generate.php -o /var/www/usgo.org/theme/includes/drupal.wphead.cached.html
+15,45 * * * * /usr/bin/python /var/www/usgo.org/theme/includes/scrape_regions.py
