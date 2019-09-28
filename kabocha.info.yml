@@ -1,6 +1,7 @@
 name: Kabocha
 description: Table-less 2-3 column variable width theme for the American Go Association
 core: 8.x
+type: theme
 engine: phptemplate
 regions: 
   sidebar_first: 'Left sidebar'
