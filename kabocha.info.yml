@@ -4,20 +4,19 @@ core: 8.x
 type: theme
 engine: twig
 regions: 
-  sidebar_first: 'Left sidebar'
-  sidebar_second: 'Right sidebar'
+  left_sidebar: 'Left sidebar'
+  right_sidebar: 'Right sidebar'
   content: 'Content'
   help: 'Help'
   highlighted: 'Highlighted'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-  footer_ads: 'Footer Ads'
+  footer: 'Footer'
 
-features: 
-  - main_menu
-  - secondary_menu
+#features: 
+#  - main_menu
+#  - secondary_menu
 
-libraries:
-  - kabocha/global-styles 
-  - kabocha/drupal-only
-  - kabocha/ie-fixes
+#libraries:
+#  - kabocha/global-styles 
+#  - kabocha/drupal-only

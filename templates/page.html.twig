@@ -1,0 +1,24 @@
+<div class="page-content-wrapper">
+    {% if page.header %}
+    <header>
+        <div id="navwrap">
+	</div>
+    </header>
+    {% endif %}
+    
+    {% if page.sidebar_left %}
+    {{ page.sidebar_left }}
+    {% endif %}
+
+    {% if page.sidebar_right %}
+       <div id="extracol">
+       {{ page.sidebar_right }}
+       </div>
+    {% endif %}
+
+    {% if page.footer %}
+       <div id="footer">
+       {{ page.footer }}
+       </div>
+    {% endif %}
+</div>

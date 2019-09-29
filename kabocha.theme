@@ -13,7 +13,7 @@ function kabocha_preprocess_html(&$variables) {
 
 function kabocha_preprocess_page(&$variables) {
   if(!empty($variables['page']['sidebar_second'])) {
-    $variables['page']['#attached'][] = 'kabocha/right-col';
+    $variables['#attached']['library'][] = 'kabocha/right-col';
   }
-  $variables['page']['#attached'][] = 'kabocha/ie-fixes';
+  $variables['#attached']['library'][] = 'kabocha/ie-fixes';
 }
