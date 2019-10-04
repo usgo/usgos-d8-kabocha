@@ -1,28 +1,28 @@
-<div class="page-content-wrapper">
-    <header id="header">
-        {{ page.header }}
-        <div id="navwrap">
-       	{{ page.main_navbar }} 
-	</div>
-    </header>
-    
-    <div id="container" class="containfloats">
-        <div id="contentwrapper">
-	    <div id="content">
-            {{ page.content }}
-            </div>
-	</div>
+<header id="header">
+    {{ page.header }}
+    <div id="navwrap">
+   	    <div class="navbar">
+        {{ page.main_navbar }}
+        </div>
+    </div>
+</header>
 
-        <div id="navcol" class="ie7fix">
-        {{ page.left_sidebar }}
-	</div>
+<div id="container" class="containfloats">
+    <div id="contentwrapper">
+        <div id="content">
+        {{ page.content }}
+        </div>
     </div>
 
-    <div id="extracol">
-    {{ page.right_sidebar }}
-    </div>
-    
-    <div id="footer">
-    {{ page.footer }}
+    <div id="navcol" class="ie7fix">
+    {{ page.left_sidebar }}
     </div>
 </div>
+
+<div id="extracol">
+{{ page.right_sidebar }}
+</div>
+
+<footer id="footer">
+{{ page.footer }}
+</footer>
