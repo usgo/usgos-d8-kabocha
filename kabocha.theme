@@ -1,15 +1,15 @@
 <?php
 
-function kabocha_preprocess_html(&$variables) {
-  if ($variables['is_front']) {
-    // Dynamically get the themes include directory.
-    $theme_includes_directory = dirname(__DIR__, 1) . "/includes";
-    $wp_head = file_get_contents($theme_includes_directory . "/drupal.wphead.html");
-    drupal_add_html_head(array('#type' => 'markup', '#markup' => $wp_head), 'wp-head');
-
-    
-  }
-}
+#function kabocha_preprocess_html(&$variables) {
+#  if ($variables['is_front']) {
+#    // Dynamically get the themes include directory.
+#    $theme_includes_directory = dirname(__DIR__, 1) . "/includes";
+#    $wp_head = file_get_contents($theme_includes_directory . "/drupal.wphead.html");
+#    drupal_add_html_head(array('#type' => 'markup', '#markup' => $wp_head), 'wp-head');
+#
+#    
+#  }
+#}
 
 function kabocha_preprocess_page(&$variables) {
   if(!empty($variables['page']['sidebar_second'])) {

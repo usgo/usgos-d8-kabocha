@@ -3,7 +3,8 @@ description: Table-less 2-3 column variable width theme for the American Go Asso
 core: 8.x
 type: theme
 engine: twig
-regions: 
+regions:
+  main_navbar: "Main Navigation"
   left_sidebar: 'Left sidebar'
   right_sidebar: 'Right sidebar'
   content: 'Content'
@@ -17,6 +18,6 @@ regions:
 #  - main_menu
 #  - secondary_menu
 
-#libraries:
-#  - kabocha/global-styles 
-#  - kabocha/drupal-only
+libraries:
+  - kabocha/global-styles 
+  - kabocha/drupal-only

@@ -1,24 +1,28 @@
 <div class="page-content-wrapper">
-    {% if page.header %}
-    <header>
+    <header id="header">
+        {{ page.header }}
         <div id="navwrap">
+       	{{ page.main_navbar }} 
 	</div>
     </header>
-    {% endif %}
     
-    {% if page.sidebar_left %}
-    {{ page.sidebar_left }}
-    {% endif %}
+    <div id="container" class="containfloats">
+        <div id="contentwrapper">
+	    <div id="content">
+            {{ page.content }}
+            </div>
+	</div>
 
-    {% if page.sidebar_right %}
-       <div id="extracol">
-       {{ page.sidebar_right }}
-       </div>
-    {% endif %}
+        <div id="navcol" class="ie7fix">
+        {{ page.left_sidebar }}
+	</div>
+    </div>
 
-    {% if page.footer %}
-       <div id="footer">
-       {{ page.footer }}
-       </div>
-    {% endif %}
+    <div id="extracol">
+    {{ page.right_sidebar }}
+    </div>
+    
+    <div id="footer">
+    {{ page.footer }}
+    </div>
 </div>
