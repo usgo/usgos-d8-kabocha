@@ -3,8 +3,10 @@ description: Table-less 2-3 column variable width theme for the American Go Asso
 core: 8.x
 type: theme
 engine: twig
+logo: images/agalogo2.png
 regions:
-  main_navbar: "Main Navigation"
+  header: 'Header'
+  main_navbar: 'Main Navigation'
   left_sidebar: 'Left sidebar'
   right_sidebar: 'Right sidebar'
   content: 'Content'
