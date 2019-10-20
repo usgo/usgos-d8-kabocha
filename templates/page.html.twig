@@ -23,8 +23,16 @@
 {{ page.right_sidebar }}
 </div>
 
-<footer id="footer">
+<footer>
+<div id="footer">
 {{ page.footer }}
 
 &copy; 1997-{{ "now"|date("Y") }} American Go Association
+</div>
+
+{% if page.footer_links %}
+    <div id="postfooter" class="containfloats">
+    {{ page.footer_links }}
+    </div>
+{% endif %}
 </footer>
