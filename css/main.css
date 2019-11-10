@@ -401,6 +401,13 @@ h3 a:hover {
     text-align: center;
 }
 
+#morenewsnav {
+    display: block;
+    font-size: 1.2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #footer {
     clear: both;
     display: block;
